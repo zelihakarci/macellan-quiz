@@ -1,0 +1,6 @@
+module Pods_macellan_macellanTests {
+  umbrella header "Pods-macellan-macellanTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

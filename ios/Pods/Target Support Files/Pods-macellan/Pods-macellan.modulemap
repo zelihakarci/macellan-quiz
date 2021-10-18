@@ -1,0 +1,6 @@
+module Pods_macellan {
+  umbrella header "Pods-macellan-umbrella.h"
+
+  export *
+  module * { export * }
+}

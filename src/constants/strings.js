@@ -1,0 +1,15 @@
+export default {
+  lagina_coffee_shop: 'Lagina Kahvecisi',
+  active_campaign: 'AKTİF KAMPANYA',
+  purses: 'CÜZDANLAR',
+  my_cards: 'KARTLARIM',
+  balance: 'BAKİYE',
+  history: 'GEÇMİŞ',
+  searchbar_placeholder: 'Cüzdan Ara...',
+  all_purses: 'TÜM CÜZDANLAR',
+  signin: 'Giriş Yapın',
+  forgot_password: 'Şifremi Unuttum',
+  login: 'Giriş Yap',
+  campaigns: 'Kampanyalar',
+  add_purse: 'Cüzdan Ekle',
+};

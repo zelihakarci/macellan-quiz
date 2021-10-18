@@ -1,0 +1,14 @@
+com/macellan/MainActivity.java
+ com.macellan.MainActivity
+com/macellan/BuildConfig.java
+ com.macellan.BuildConfig
+com/macellan/MainApplication.java
+ com.macellan.MainApplication
+ com.macellan.MainApplication$1
+com/macellan/ReactNativeFlipper.java
+ com.macellan.ReactNativeFlipper
+ com.macellan.ReactNativeFlipper$1
+ com.macellan.ReactNativeFlipper$2
+ com.macellan.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
