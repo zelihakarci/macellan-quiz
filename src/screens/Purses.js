@@ -18,7 +18,7 @@ import SearchBar from '../components/SearchBar';
 import colors from '../constants/colors';
 import strings from '../constants/strings';
 import EllipseView from '../components/EllipseView';
-import İconsView from '../components/İconsView';
+import IconsView from '../components/IconsView';
 
 const Purses = ({navigation}) => {
   const screenWidth = Dimensions.get('screen').width;
@@ -56,7 +56,7 @@ const Purses = ({navigation}) => {
             top: orientation === 'PORTRAIT' ? height * 0.48 : height / 1.5,
             left: 15,
           }}>
-          <İconsView orientation={orientation} width={width} height={height} />
+          <IconsView orientation={orientation} width={width} height={height} />
         </View>
         <View
           style={{

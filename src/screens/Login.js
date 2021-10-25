@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   ScrollView,
   Text,
   View,
   Platform,
   KeyboardAvoidingView,
+  Dimensions
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {KeyIcon, PhoneIcon, LoginIcon} from '../assets/svgs/SvgSource';
@@ -16,6 +17,20 @@ import colors from '../constants/colors';
 import strings from '../constants/strings';
 
 const Login = ({navigation}) => {
+  const screenWidth = Dimensions.get('screen').width;
+  const screenHeight = Dimensions.get('screen').height;
+  const firstOrientation =
+    screenWidth < screenHeight ? 'PORTRAIT' : 'LANDSPACE';
+  const [orientation, setOrientation] = useState(firstOrientation);
+  useEffect(() => {
+    Dimensions.addEventListener('change', ({window: {width, height}}) => {
+      if (width < height) {
+        setOrientation('PORTRAIT');
+      } else {
+        setOrientation('LANDSCAPE');
+      }
+    });
+  });
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
       <KeyboardAvoidingView
@@ -37,7 +52,7 @@ const Login = ({navigation}) => {
               flex: 0.5,
               justifyContent: 'center',
               backgroundColor: colors.white,
-              margin:'5%'
+              margin: '5%',
             }}>
             <LoginIcon width={150} height={150} />
           </View>
@@ -84,6 +99,7 @@ const Login = ({navigation}) => {
                   {strings.forgot_password}
                 </Text>
               </View>
+              <Spacer size={10} />
               <CustomButton
                 textValue={strings.login}
                 backgroundColor={colors.darkblue}
@@ -91,6 +107,7 @@ const Login = ({navigation}) => {
                 onPress={() => {
                   navigation.navigate('Purses');
                 }}
+                orientation={orientation}
               />
             </View>
           </View>

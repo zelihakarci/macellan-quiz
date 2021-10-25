@@ -10,7 +10,7 @@ import {
   GiftIcon,
 } from '../assets/svgs/SvgSource';
 
-const İconsView = ({orientation, width, height}) => {
+const IconsView = ({orientation, width, height}) => {
   return (
     <View style={{flex: 1, flexDirection: 'row'}}>
       <View>
@@ -70,4 +70,4 @@ const İconsView = ({orientation, width, height}) => {
   );
 };
 
-export default İconsView;
+export default IconsView;
